@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 require 'fileutils'
 
-if ARGV[0] == "--help"
-  puts "Usage: ./activate.rb [platform].\n Platform defaults to mac."
+if ARGV[0] == "--help" || (ARGV[0] != 'mac' && ARGV[0] != 'linux')
+  puts "Usage: ./activate.rb platform\n platform can be linux or mac."
   exit(0)
 end
 
