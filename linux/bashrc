@@ -60,3 +60,4 @@ fi
 
 
 complete -C ~/.rake_completion -o default rake
+complete -W "$(cap -qT | egrep ^cap | awk '{print $2}')" cap
