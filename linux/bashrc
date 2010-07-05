@@ -58,3 +58,5 @@ fi
 
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
+
+complete -C ~/.rake_completion -o default rake
