@@ -9,11 +9,6 @@ end
 working_dir = File.expand_path(File.dirname(__FILE__))
 home_dir = File.expand_path("~")
 
-unless File.exists? File.join(working_dir, "vim", "vim")
-  puts "vim submodule not found. You should probably do a git submodule init && git submodule update"
-  exit(0)
-end 
-
 platform_specific = Dir.glob(File.join(working_dir,ARGV[0] || "mac","*"))
 all_platforms = Dir.glob(File.join(working_dir,"all","*"))
 
